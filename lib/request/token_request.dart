@@ -15,10 +15,6 @@ class TokenRequestDetails {
       'redirect_uri': config.redirectUri,
     };
 
-    if (config.resource != null) {
-      params.putIfAbsent('resource', () => config.resource);
-    }
-
     if (config.clientSecret != null) {
       params.putIfAbsent('client_secret', () => config.clientSecret);
     }
