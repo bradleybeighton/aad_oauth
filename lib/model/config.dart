@@ -57,7 +57,8 @@ class Config {
       this.isB2C = false,
       this.loginHint,
       this.domainHint,
-      this.codeVerifier}) {
+      this.codeVerifier,
+      this.userAgent}) {
     authorizationUrl = isB2C
         ? 'https://$tenant.b2clogin.com/$tenant.onmicrosoft.com/$policy/oauth2/v2.0/authorize'
         : 'https://login.microsoftonline.com/$tenant/oauth2/v2.0/authorize';
